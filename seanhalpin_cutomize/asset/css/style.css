@@ -1,0 +1,257 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+    background: #fff;
+}
+
+:root {
+    --background: #e0ebe8;
+    --color-letter: #45b29a;
+    --color-hover: #21564b;
+    --color-heading: #1e836c;
+}
+
+/* line */
+hr {
+    width: 5%;
+    border: none;
+    border-top: 7px dotted rgb(235, 234, 234);
+}
+
+/* header */
+#header {
+    padding-top: 0;
+    overflow: hidden;
+    background-color: var(--background);
+}
+
+#header .header-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* logo */
+#header .header-nav img.img-logo {
+    padding: 1.9rem 0 1.5rem 10rem;
+}
+
+/* nav */
+#header .header-nav .list-nav {
+    display: flex;
+    gap: 45px;
+    padding-right: 10rem;
+}
+
+#header .header-nav .list-nav li {
+    list-style: none;
+}
+
+#header .header-nav .list-nav li a {
+    text-decoration: none;
+    color: var(--color-letter);
+    font-size: 1.2rem;
+}
+
+#header .header-nav .list-nav li:hover a {
+    color: var(--color-hover);
+}
+
+#header .header-nav .list-nav li a.active {
+    color: var(--color-hover);
+}
+
+/* cloud */
+#header .header-cloud .img-cloud-lelf {
+    position: absolute;
+    top: 55%;
+    left: 14%;
+}
+
+#header .header-cloud .img-cloud-right {
+    position: absolute;
+    left: 75%;
+    top: 35%;
+}
+
+/* im sean */
+#header .header-sean {
+    position: relative;
+    padding-top: 5.6rem;
+}
+
+#header .header-desc {
+    padding-top: 1rem;
+    font-size: 1.4rem;
+    color: var(--color-letter);
+}
+
+/* banner */
+#header .header-banner {
+    padding-top: 4.3rem;
+    margin-bottom: -4px;
+}
+
+/* about */
+#about .about-content {
+    padding: 4.7rem 0;
+}
+
+#about .about-content .about-heading {
+    color: var(--color-letter);
+}
+
+#about .about-content .about-desc {
+    width: 40%;
+    font-size: 1.4rem;
+    margin: 0 auto;
+}
+
+/* work */
+#work .work-content {
+    padding: 3.1rem 0;
+}
+
+#work .work-content .work-heading {
+    color: var(--color-heading);
+    font-size: 2.5rem;
+}
+
+/* work content lelf */
+#work .work-content .work-content-lelf {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1.9rem;
+    padding-bottom: 1.3rem;
+}
+
+#work .work-content .work-content-lelf .img-work {
+    margin-left: 1.9rem;
+}
+
+#work .work-content .work-content-lelf .img-work-one {
+    background-color: gainsboro;
+    border-radius: 50%;
+    margin: 0 4rem;
+}
+
+#work .work-content .work-content-lelf .work-para-lelf {
+    width: 55%;
+    margin-right: -10rem;
+    text-align: left;
+}
+
+#work .work-content .work-content-lelf .work-para-lelf .work-heading-lelf {
+    color: var(--color-letter);
+    font-size: 1.7rem;
+}
+
+#work .work-content .work-content-lelf .work-para-lelf .work-desc {
+    width: 520px;
+    font-size: 1.5rem;
+}
+
+/* work content  right */
+#work .work-content .work-content-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1.9rem;
+    padding-bottom: 1.3rem;
+}
+
+#work .work-content .work-content-right .img-work {
+    margin-left: 2.9rem;
+    margin-right: 15rem;
+}
+
+#work .work-content .work-content-right .img-work-one {
+    background-color: gainsboro;
+    border-radius: 50%;
+    margin-left: 4.4rem;
+}
+
+#work .work-content .work-content-right .work-para-right {
+    width: 55%;
+    margin-left: 15rem;
+    text-align: left;
+}
+
+#work .work-content .work-content-right .work-para-right .work-heading-right {
+    color: var(--color-letter);
+    font-size: 1.7rem;
+}
+
+#work .work-content .work-content-right .work-para-right .work-desc {
+    width: 100%;
+    font-size: 1.5rem;
+}
+
+/* contact */
+#contact .contact-content {
+    padding: 2.5rem 0;
+}
+
+#contact .contact-content .contact-heading {
+    color: var(--color-heading);
+    font-size: 2.5rem;
+    padding-bottom: 1.3rem;
+}
+
+#contact .contact-content .contact-heading3 {
+    color: var(--color-letter);
+    font-size: 1.5rem;
+}
+
+#contact .contact-content .contact-para {
+    width: 45%;
+    font-size: 1.2rem;
+    margin: 0 auto;
+    padding: 1.3rem 0;
+}
+
+#contact .contact-content .contact-btn {
+    background-color: var(--color-letter);
+    color: var(--color-hover);
+    width: 16%;
+    padding: 1rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 3px;
+}
+
+#contact .contact-content .contact-btn i {
+    margin-right: 1.6rem;
+    font-size: 1.3rem;
+}
+
+/* footer */
+#footer {
+    background-color: #c5ded7;
+    margin-top: 5.6rem;
+}
+
+#footer .footer-content {
+    color: var(--color-letter);
+    padding: 1.9rem;
+}
+
+#footer .footer-content ul {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    padding-bottom: 1.9rem;
+}
+
+#footer .footer-content ul li {
+    list-style: none;
+    font-size: 1.2rem;
+}
+
+#footer .footer-content ul li:hover {
+    color: var(--color-hover);
+    cursor: pointer;
+}
