@@ -1,0 +1,82 @@
+:root {
+    --color-white: #fff;
+    --color-brown: #884A39;
+    --bg-color: #E5BA73;
+    --hover-color: #C58940;
+}
+
+/* navigation */
+.nav-link {
+    color: var(--color-brown);
+    font-weight: 600;
+    font-size: 1.2rem;
+    display: inline-block;
+    margin: 0.6rem;
+}
+
+.navbar-nav .nav-link.active {
+    color: var(--color-white);
+    background-color: var(--bg-color);
+    display: inline-block;
+    padding: 0.5rem;
+}
+
+.nav-link:focus, .nav-link:hover {
+    color: var(--hover-color);
+}
+
+/* header */
+.header-name {
+    color: var(--color-brown);
+}
+
+/* portfolio */
+.portfolio-icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.2s ease-in-out;
+    opacity: 0;
+    background-color: rgb(255 255 255 / 65%);
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+}
+
+.portfolio-icon:hover {
+    opacity: 1;
+}
+
+.href-a-modal {
+    text-decoration: none;
+    color: var(--color-brown);
+    text-transform: capitalize;
+}
+
+/* contact */
+.btn-send {
+    background-color: var(--bg-color);
+    text-transform: uppercase;
+    color: var(--color-white);
+    border: none;
+}
+
+.btn-send:focus, .btn-send:hover, .btn:active {
+    background-color: var(--bg-color)!important;
+    color: var(--color-white)!important;
+}
+
+/* footer */
+.icon i {
+    color: var(--color-brown);
+}
+
+.icon i:focus, .icon i:hover {
+    color: var(--color-white);
+    background-color: var(--bg-color);
+    cursor: pointer;
+}
+.copyright {
+    color: var(--color-white);
+    background-color: var(--bg-color);
+}
