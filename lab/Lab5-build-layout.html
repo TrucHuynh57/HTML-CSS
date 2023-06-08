@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Build Layout</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            grid-template-areas:
+                "item-a item-b"
+                "item-c item-parent"
+                "item-c item-parent"
+            ;
+            gap: 10px;
+            padding: 10px;
+        }
+
+        .container .item-a,
+        .item-b,
+        .item-c,
+        .item-parent {
+            background-color: #464545;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 7px;
+        }
+
+        .item-a {
+            grid-area: item-a;
+        }
+
+        .item-b {
+            grid-area: item-b;
+        }
+
+        .item-c {
+            grid-area: item-c;
+        }
+
+        .container .item-parent {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            grid-template-areas:
+                "item-e item-e"
+                "item-f item-g"
+            ;
+            gap: 10px;
+            padding: 10px;
+            grid-area: item-parent;
+        }
+
+        .item-parent .item-e,
+        .item-f,
+        .item-g {
+            background-color: gainsboro;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 7px;
+            height: 80px;
+        }
+
+        .item-parent .item-e {
+            grid-area: item-e;
+        }
+
+        .item-parent .item-f {
+            grid-area: item-f;
+        }
+
+        .item-parent .item-g {
+            grid-area: item-g;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item-a">A</div>
+        <div class="item-b">B</div>
+        <div class="item-c">C</div>
+        <div class="item-parent">
+            <div class="item-e">E</div>
+            <div class="item-f">F</div>
+            <div class="item-g">G</div>
+        </div>
+    </div>
+</body>
+
+</html>

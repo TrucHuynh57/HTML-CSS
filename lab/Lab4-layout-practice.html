@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout practice</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-template-rows: repeat(4, 100px);
+            grid-template-areas:
+                "item-a item-a item-b item-c item-d"
+                "item-e item-f item-g item-g item-h"
+                "item-i item-j item-g item-g ."
+                "item-k item-k item-k item-l item-m"
+            ;
+            gap: 10px;
+        }
+
+        .container div {
+            background-color: #464545;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 7px;
+        }
+
+        .item-a {
+            grid-area: item-a;
+        }
+
+        .item-b {
+            grid-area: item-b;
+        }
+
+        .item-c {
+            grid-area: item-c;
+        }
+
+        .item-d {
+            grid-area: item-d;
+        }
+
+        .item-e {
+            grid-area: item-e;
+        }
+
+        .item-f {
+            grid-area: item-f;
+        }
+
+        .item-g {
+            grid-area: item-g;
+        }
+
+        .item-h {
+            grid-area: item-h;
+        }
+
+        .item-i {
+            grid-area: item-i;
+        }
+
+        .item-j {
+            grid-area: item-j;
+        }
+
+        .item-k {
+            grid-area: item-k;
+        }
+
+        .item-l {
+            grid-area: item-l;
+        }
+
+        .item-m {
+            grid-area: item-m;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item-a">A</div>
+        <div class="item-b">B</div>
+        <div class="item-c">C</div>
+        <div class="item-d">D</div>
+        <div class="item-e">E</div>
+        <div class="item-f">F</div>
+        <div class="item-g">G</div>
+        <div class="item-h">H</div>
+        <div class="item-i">I</div>
+        <div class="item-j">J</div>
+        <div class="item-k">K</div>
+        <div class="item-l">L</div>
+        <div class="item-m">M</div>
+    </div>
+</body>
+
+</html>
