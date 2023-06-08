@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mondrian project</title>
+    <style>
+        body {
+            width: 748px;
+            height: 748px;
+            margin: 0 auto;
+        }
+
+        .wrapper {
+            display: grid;
+            grid-template-areas:
+                "first-element second-element second-element"
+                "third-element fourth-element fifth-element"
+                "third-element fourth-element fifth-element"
+                "sixth-element seventh-element fifth-element";
+            background-color: #333;
+            gap: 9px;
+        }
+
+        .first-element {
+            width: 320px;
+            height: 414px;
+            background-color: red;
+            grid-area: first-element;
+        }
+
+        .second-element {
+            width: 419px;
+            height: 414px;
+            background-color: #dfdcc3;
+            grid-area: second-element;
+        }
+
+        .third-element {
+            width: 320px;
+            height: 295px;
+            background-color: #dfdcc3;
+            grid-area: third-element;
+        }
+
+        .fourth-element {
+            width: 351px;
+            height: 295px;
+            background-color: #dfdcc3;
+            grid-area: fourth-element;
+        }
+
+        .fifth-element {
+            display: grid;
+            width: 59px;
+            max-height: 100%;
+            grid-area: fifth-element;
+            background-color: #333;
+        }
+
+        .fifth-element .first-child {
+            background-color: blue;
+            width: 59px;
+            height: 130px;
+            border-bottom: 10px solid;
+        }
+
+        .fifth-element .second-child {
+            background-color: #dfdcc3;
+            width: 59px;
+            height: 175px;
+            border-top: 10px solid;
+        }
+
+        .sixth-element {
+            width: 320px;
+            height: 20px;
+            background-color: #dfdcc3;
+            grid-area: sixth-element;
+        }
+
+        .seventh-element {
+            width: 351px;
+            height: 20px;
+            display: grid;
+            grid-area: seventh-element;
+        }
+
+        .seventh-element .first-child {
+            background-color: yellow;
+            width: 198px;
+            height: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="first-element"></div>
+        <div class="second-element"></div>
+        <div class="third-element"></div>
+        <div class="fourth-element"></div>
+        <div class="fifth-element">
+            <div class="first-child"></div>
+            <div class="second-child"></div>
+        </div>
+        <div class="sixth-element"></div>
+        <div class="seventh-element">
+            <div class="first-child"></div>
+        </div>
+    </div>
+</body>
+
+</html>
